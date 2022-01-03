@@ -1,0 +1,14 @@
+version: '3.2'
+services:
+  main:
+    build: ./docker
+    image: zenn-base
+    container_name: zenn-docs
+    volumes:
+      - type: bind
+        source: "."
+        target: "/workspaces/zenn-docs"
+        consistency: "cached"
+    ports:
+      - "8000:8000"
+    tty: true

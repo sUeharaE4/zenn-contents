@@ -1,0 +1,21 @@
+{
+    "name": "Zenn Docs",
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+    ],
+    "service": "main",
+    "workspaceFolder": "/workspaces/zenn-docs",
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "ash": {
+                "path": "/bin/ash",
+            }
+        },
+        "terminal.integrated.defaultProfile.linux": "ash",
+        "textlint.nodePath": "/workspaces/node_app/node_modules/",
+    },
+    "extensions": [
+        "taichi.vscode-textlint",
+        "negokaz.zenn-editor"
+    ]
+}
